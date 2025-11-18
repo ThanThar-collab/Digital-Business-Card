@@ -1,68 +1,130 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #fffbfb;
+  color: #fff;
+  font-family: sans-serif;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+h2 {
+  font-size: 2em;
+  line-height: 0;
+
 }
 
-button {
+.card-container {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* center horizontally */
+  text-align: center;    /* center text */
+  width: 350px;
+  margin: auto;
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.main-container {
+  width: 350px;
+  margin-top: 2rem;
+}
+
+.button-group button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #fff;
   cursor: pointer;
   transition: border-color 0.25s;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+ 
 }
-button:hover {
-  border-color: #646cff;
+.button-group button:hover {
+  background-color: #5860eb;
+  color: white;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+h3 {
+  text-align: left;
+  line-height: 0;
+}
+.profile-role-container p {
+  text-align: center;
+  padding: 0 10px; /* small padding */
+  width: auto;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.main-container p {
+  font-size: 0.6rem;
+  line-height: 1rem;
+  width: auto;
+  color: #C4C4C4;
+  text-align: left;
+  margin-bottom: 2rem;
 }
+
+.role {
+  margin-top: 1rem;
+  
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  margin: 20px auto;       /* center on the page */
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #1f1f1f;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  overflow: hidden;        /* prevent content from overflowing */
+}
+.profile-photo {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 0;
+
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 15px;
+  margin-top: 0;
+  padding: 1rem;
+}
+
+.footer-icons a {
+  color: #fff;
+}
+
+.button-group a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #252323;
+  gap: 5px;
+  padding: 0;
+  margin: 0 25px;
+}
+
